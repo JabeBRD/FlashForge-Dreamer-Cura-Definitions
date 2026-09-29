@@ -16,7 +16,7 @@ I have tested this profile with [Cura 5.14](https://ultimaker.com/software/ultim
 Please follow the below instructions to install this profile to Cura:
 
 1. Download the latest release .zip from [here](https://github.com/JabeBRD/FlashForge-Dreamer-Cura-Definitions/releases/latest).
-2. Copy ####**resources** and **plugins** folders into your Cura install directory:
+2. Copy **resources** and **plugins** folders into your Cura install directory:
     - Windows: ``"C:\Program Files\Ultimaker Cura {Version}\share\cura\"``
 3. After unzipping, open Cura and select the printer under ``FlashForge > Dreamer``
 
