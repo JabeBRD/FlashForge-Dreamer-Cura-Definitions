@@ -10,13 +10,13 @@ fitness for a particular purpose. I will not be liable to you or anyone else for
 
 **_WARNING:_** This profile adds support for the Dual Extruder Dreamer 3D printer with factory firmware. For printers flashed to [Marlin](https://github.com/moonglow/FlashForge_Marlin) firmware, use [tracedgod](https://github.com/tracedgod)´s profile.
 
-I have tested this profile with [Cura 5.14](https://ultimaker.com/software/ultimaker-cura) on Windows with good results, but it may not work 100% correctly. Please submit an [issue](https://github.com/JabeBRD/FlashForge-Dreamer-Cura-Definitions/issues) if you run into any problems, or if you have a change suggestion, please submit a [pull request](https://github.com/tracedgod/FlashForge-Dreamer-Cura-Definitions/pulls).
+I have tested this profile with [Cura 5.14](https://ultimaker.com/software/ultimaker-cura) on Windows with good results, but it may not work 100% correctly. Please submit an [issue](https://github.com/JabeBRD/FlashForge-Dreamer-Cura-Definitions/issues) if you run into any problems, or if you have a change suggestion, please submit a [pull request](https://github.com/JabeBRD/FlashForge-Dreamer-Cura-Definitions/pulls).
 
 #### **_Installation Instructions:_**
 Please follow the below instructions to install this profile to Cura:
 
 1. Download the latest release .zip from [here](https://github.com/JabeBRD/FlashForge-Dreamer-Cura-Definitions/releases/latest).
-2. Unzip the files into your Cura install directory:
+2. Copy ####**resources** and **plugins** folders into your Cura install directory:
     - Windows: ``"C:\Program Files\Ultimaker Cura {Version}\share\cura\"``
 3. After unzipping, open Cura and select the printer under ``FlashForge > Dreamer``
 
