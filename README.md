@@ -26,6 +26,6 @@ Please follow the below instructions to install this profile to Cura:
 
 
 ## **_Contributors:_**
-- [tracedgod](https://github.com/tracedgod)
-- [Artimidorus](https://github.com/Artimidorus)
 - [JabeBRD](https://github.com/JabeBRD)
+
+**Forked** from **[tracedgod](https://github.com/tracedgod) **profile.
