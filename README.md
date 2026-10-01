@@ -28,4 +28,4 @@ Please follow the below instructions to install this profile to Cura:
 ## **_Contributors:_**
 - [JabeBRD](https://github.com/JabeBRD)
 
-**Forked** from **[tracedgod](https://github.com/tracedgod) **profile.
+**Forked** from [tracedgod](https://github.com/tracedgod) profile.
