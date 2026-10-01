@@ -13,7 +13,7 @@
                        },
         "machine_nozzle_size": { "default_value": 0.4 },
         "material_diameter": { "default_value": 1.75 },
-        "machine_nozzle_offset_x": { "default_value": -34.0 },
+        "machine_nozzle_offset_x": { "default_value": 0.0 },
         "machine_nozzle_offset_y": { "default_value": 0.0 },
         "machine_extruder_start_code": {
             "default_value": "\nM108 T1 ; Select Active Extruder\n"         
