@@ -32,6 +32,7 @@ Please follow the below instructions to install this profile to Cura:
 4. Use provided Post Processing script (FlashForge Dreamer) when slicing.
 
 You can use [GXWriter](https://marketplace.ultimaker.com/app/cura/plugins/Ronoaldo/GXWriter) plugin from Cura Marketplace to make .gx file. 
+Also Cura's default Purge Lines and Unload Filament post processing script is supported.
 
 
 ## **_Contributors:_**
