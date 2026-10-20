@@ -26,6 +26,8 @@
         "retraction_enable": { "value": true },
         "retraction_amount": { "default_value": 1.3 },
         "retraction_speed": { "default_value": 40 },
+		"machine_nozzle_heat_up_speed": { "default_value": 0.7 },
+		"machine_nozzle_cool_down_speed": { "default_value": 1.0 },
         "machine_width": {"default_value": 230},
         "machine_height": {"default_value": 140},
         "machine_depth": {"default_value": 150},
@@ -38,7 +40,7 @@
 
         "machine_gcode_flavor": {"default_value": "RepRap (Marlin/Sprinter)"},
 		"machine_start_gcode_first": { "default_value": true },
-        "machine_start_gcode": {"default_value": "; startcode\n; --- Flashforge Dreamer dual nozzle (Cura 5.14) ---\n; Nozzle 1 (Right) temp: {material_print_temperature_layer_0, 0}\n; Nozzle 2 (Left) temp: {material_print_temperature_layer_0, 1}\n; Bed temp: {material_bed_temperature_layer_0}\n; HEAT: Heat extruder only if used in print\nM118 X17.70 Y17.70 Z34.89 {if is_extruder_used[0]}T0{endif} {if is_extruder_used[1]}T1\n{endif}\nM140 S{material_bed_temperature_layer_0} T0\nM104 S{if is_extruder_used[0]}{material_print_temperature_layer_0, 0}{else}0{endif} T0\nM104 S{if is_extruder_used[1]}{material_print_temperature_layer_0, 1}{else}0{endif} T1\nM107\nG90\nG28\nM132 X Y Z A B\nG1 Z50.000 F420\nG161 X Y F3300\nM7 T0\n{if is_extruder_used[0]}M6 T0\n{endif}\n{if is_extruder_used[1]}\nM6 T1\n{endif}\nM651 S255\nM907 X100 Y100 Z40 A{if is_extruder_used[0]}80{else}20{endif} B{if is_extruder_used[1]}80{else}20{endif}"},
+        "machine_start_gcode": {"default_value": "; startcode\n; --- Flashforge Dreamer dual nozzle (Cura 5.14) ---\n; Nozzle 1 (Right) temp: {material_print_temperature_layer_0, 0}\n; Nozzle 2 (Left) temp: {material_print_temperature_layer_0, 1}\n; Bed temp: {material_bed_temperature_layer_0}\n; HEAT: Heat extruder only if used in print\nM118 X17.70 Y17.70 Z34.89{if is_extruder_used[0] and is_extruder_used[1]} T0 T1\n{elif is_extruder_used[0]} T0\n{elif is_extruder_used[1]} T1\n{endif}\nM140 S{material_bed_temperature_layer_0} T0\nM104 S{if is_extruder_used[0]}{material_print_temperature_layer_0, 0}{else}0{endif} T0\nM104 S{if is_extruder_used[1]}{material_print_temperature_layer_0, 1}{else}0{endif} T1\nM107\nG90\nG28\nM132 X Y Z A B\nG1 Z50.000 F420\nG161 X Y F3300\nM7 T0\n{if is_extruder_used[0]}M6 T0\n{endif}\n{if is_extruder_used[1]}\nM6 T1\n{endif}\nM651 S255\nM907 X100 Y100 Z40 A{if is_extruder_used[0]}80{else}20{endif} B{if is_extruder_used[1]}80{else}20{endif}"},
         "machine_end_gcode": {"default_value": ";endcode\n; --- Flashforge Dreamer dual nozzle (Cura 5.14) ---\n{if is_extruder_used[0]}\nM104 S0 T0\n{endif}\n{if is_extruder_used[1]}\nM104 S0 T1\n{endif}\nM140 S0 T0\nG162 Z F1800\nG28 X Y\nM132 X Y A B\nM652\nG91\nM18"}
     }
 	
